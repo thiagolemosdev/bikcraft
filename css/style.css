@@ -8,3 +8,6 @@
 
 /* Utilidades */
 @import "./utilidades/components.css";
+
+/* Biciletas */
+@import "./bicicletas/bicicletas-lista.css";
