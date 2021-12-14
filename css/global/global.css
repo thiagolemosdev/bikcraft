@@ -22,7 +22,8 @@ ul {
   list-style: none;
 }
 
-a {
+a,
+input {
   text-decoration: none;
   color: inherit;
 }
