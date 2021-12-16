@@ -9,6 +9,9 @@
   <title>Seguros | Bikcraft</title>
   <meta name="description" content="Termos e condições.">
 
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./img/icones/eletrica.svg" type="image/svg+xml">
+
   <!-- FONTS - CSS  -->
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
@@ -19,6 +22,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script>
+    document.documentElement.classList.add('js')
+  </script>
 </head>
 
 <body id="seguros">
@@ -46,7 +52,7 @@
     </div>
 
     <div class="seguros container">
-      <div class="seguros-item">
+      <div class="seguros-item fadeInLeft" data-anime="200">
         <h3 class="font-1-xl cor-6">PRATA</h3>
         <span class="font-1-xl cor-0">R$ 199 <span class="font-1-xs cor-6">mensal</span></span>
         <ul class="font-2-m cor-0">
@@ -55,10 +61,10 @@
           <li>Suporte 08h às 18h</li>
           <li>Cobertura estadual</li>
         </ul>
-        <a class="botao secundario" href="./orcamento.html">inscreva-se</a>
+        <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">inscreva-se</a>
       </div>
 
-      <div class="seguros-item">
+      <div class="seguros-item fadeInRight" data-anime="400">
         <h3 class="font-1-xl cor-p1">OURO</h3>
         <span class="font-1-xl cor-p1">R$ 299 <span class="font-1-xs cor-6">mensal</span></span>
         <ul class="font-2-m cor-0">
@@ -69,7 +75,7 @@
           <li>Desconto em parceiros</li>
           <li>Acesso ao Clube Bikcraft</li>
         </ul>
-        <a class=" botao" href="./orcamento.html">inscreva-se</a>
+        <a class=" botao" href="./orcamento.html?tipo=seguro&produto=ouro">inscreva-se</a>
       </div>
     </div>
   </main>
@@ -118,32 +124,32 @@
     <h2 class="font-1-xxl">perguntas frenquentes<span class="cor-p1">.</span></h2>
     <dl>
       <div>
-        <dt class="font-1-m-b">Quais são as formas de pagamento?</dt>
-        <dd class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, American Express. Para pagamentos à vista tambem aceitamos PIX e Boleto atraves do PagSeguro. </dd>
+        <dt><button aria-controls="pergunta1" aria-expanded="true" class="font-1-m-b">Quais são as formas de pagamento?</button></dt>
+        <dd id="pergunta1" class="font-2-s cor-8 ativo">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, American Express. Para pagamentos à vista tambem aceitamos PIX e Boleto atraves do PagSeguro. </dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Como posso entrar em contato?</dt>
-        <dd class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, American Express. Para pagamentos à vista tambem aceitamos PIX e Boleto atraves do PagSeguro. </dd>
+        <dt> <button aria-controls="pergunta2" aria-expanded="false" class="font-1-m-b">Como posso entrar em contato?</button></dt>
+        <dd id="pergunta2" class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, American Express. Para pagamentos à vista tambem aceitamos PIX e Boleto atraves do PagSeguro. </dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Vocês posuem algum desconto?</dt>
-        <dd class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, American Express. Para pagamentos à vista tambem aceitamos PIX e Boleto atraves do PagSeguro. </dd>
+        <dt><button aria-controls="pergunta3" aria-expanded="false" class="font-1-m-b">Vocês posuem algum desconto?</button></dt>
+        <dd id="pergunta3" class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, American Express. Para pagamentos à vista tambem aceitamos PIX e Boleto atraves do PagSeguro. </dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Qual garantia possuo?</dt>
-        <dd class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, American Express. Para pagamentos à vista tambem aceitamos PIX e Boleto atraves do PagSeguro. </dd>
+        <dt><button aria-controls="pergunta4" aria-expanded="false" class="font-1-m-b">Qual garantia eu possuo</button></dt>
+        <dd id="pergunta4" class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, American Express. Para pagamentos à vista tambem aceitamos PIX e Boleto atraves do PagSeguro. </dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Posso parcelar no boleto?</dt>
-        <dd class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, American Express. Para pagamentos à vista tambem aceitamos PIX e Boleto atraves do PagSeguro. </dd>
+        <dt><button aria-controls="pergunta5" aria-expanded="false" class="font-1-m-b"> Posso parcelar no boleto?</button></dt>
+        <dd id="pergunta5" class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, American Express. Para pagamentos à vista tambem aceitamos PIX e Boleto atraves do PagSeguro. </dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Quantas trocas posso fazer por ano?</dt>
-        <dd class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, American Express. Para pagamentos à vista tambem aceitamos PIX e Boleto atraves do PagSeguro. </dd>
+        <dt><button aria-controls="pergunta6" aria-expanded="false" class="font-1-m-b">Quantas trocas posso fazer por ano?</button></dt>
+        <dd id="pergunta6" class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, American Express. Para pagamentos à vista tambem aceitamos PIX e Boleto atraves do PagSeguro. </dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Qual Bikcraft devo escolher para o meu tamanho?</dt>
-        <dd class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, American Express. Para pagamentos à vista tambem aceitamos PIX e Boleto atraves do PagSeguro. </dd>
+        <dt><button aria-controls="pergunta7" aria-expanded="false" class="font-1-m-b">Qual Bikcraft devo escolher para o meu tamanho?</button></dt>
+        <dd id="pergunta7" class="font-2-s cor-8">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, American Express. Para pagamentos à vista tambem aceitamos PIX e Boleto atraves do PagSeguro. </dd>
       </div>
     </dl>
   </article>
@@ -190,6 +196,7 @@
       <p class="footer-copy font-2-m cor-6">Bikcraft Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
